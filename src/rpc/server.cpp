@@ -347,6 +347,7 @@ static const CRPCCommand vRPCCommands[] =
     { "ravendark",               "masternode",             &masternode,             true  },
     { "ravendark",               "masternodelist",         &masternodelist,         true  },
     { "ravendark",               "masternodebroadcast",    &masternodebroadcast,    true  },
+    { "ravendark",               "masternodecoldcreate",   &masternodecoldcreate,   true  },
     { "ravendark",               "gobject",                &gobject,                true  },
     { "ravendark",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
     { "ravendark",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
