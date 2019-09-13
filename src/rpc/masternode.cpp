@@ -903,6 +903,7 @@ UniValue masternodecoldcreate(const UniValue &params, bool fHelp)
     statusObj.push_back(Pair("result", fResult ? "successful" : "failed"));
     if (fResult) {
         CDataStream ssMnb(SER_NETWORK, PROTOCOL_VERSION);
+        ssMnb << 1; //add 01 to the begining of the data stream for some unknown reason
         ssMnb << mnb;
         statusObj.push_back(Pair("hex", HexStr(ssMnb)));
     } else {
